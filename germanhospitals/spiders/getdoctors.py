@@ -24,6 +24,18 @@ class GetdoctorsSpider(scrapy.Spider):
 
     def parse_each_state(self,response):
         total_hospitals = response.xpath("//h2[@class='result_list_headline']/strong/text()").extract()
+        count = int(total_hospitals[0])//10
+        for i in range(count):
+            yield Request(
+                url="https://www.german-hospital-directory.com/search/_files/main-search/Suchergebnis.jsf?page=%d" %i,
+                callback=self.parse_each_hospital
+                )
+
+    def parse_each_hospital(self,response):
+        #Should be completed
+        print("the resulting url--> ", response.url)
+        pass
+
         
 
         
