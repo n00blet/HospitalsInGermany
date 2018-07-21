@@ -23,7 +23,12 @@ class GetdoctorsSpider(scrapy.Spider):
     	
 
     def parse_each_state(self,response):
-        state_url = response.url
+        total_hospitals = response.xpath("//h2[@class='result_list_headline']/strong/text()").extract()
+        
+
+        
+
+    
         
 
 
