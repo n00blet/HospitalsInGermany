@@ -12,9 +12,10 @@ pip3 install -r requirements.txt
 ## Running main project
 
 You should run the project outside "germanhospitals" directory
-scrapy crawl getdoctors { This only crawls the website }
-*To be updated*                        {Writing the crawled data to json}
-*To be updated*                        {Writing the crawled data to csv}
+
+* scrapy crawl getdoctors { This only crawls the website }
+* *To be updated*                        {Writing the crawled data to json}
+* *To be updated*                        {Writing the crawled data to csv}
 
 
 ## Future Maybe TO-DO's
