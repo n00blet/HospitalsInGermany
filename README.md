@@ -19,7 +19,6 @@ You should run the project outside "germanhospitals" directory
 
 
 ## Future Maybe TO-DO's
-
-1).Visualizing data according to states/cities
-
-2).Data Analysis
+* Pipelining to a NoSql (MongoDB)
+* Visualizing data according to states/cities
+* Data Analysis
